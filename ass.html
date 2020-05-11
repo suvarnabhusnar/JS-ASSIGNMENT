@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  
+    <body>
+        <h1 id="result">Hello</h1>
+        
+        <h1 id="Name"></h1>
+
+        <button type="button" onclick='displayName("SUVARNA")'>Click Here</button>
+
+        <h1 id="h1Name"></h1>
+        <h2 id="h2Name"></h2>
+        <h3 id="h3Name"></h3>
+        <h4 id="h4Name"></h4>
+        <h5 id="h5Name"></h5>
+ <script>
+
+        function highestNumber(a,b,c)
+        {
+
+        if(a>b && a>c)
+        {
+            return a;
+        }
+        else if(b>c)
+        {
+            return b;
+        }
+        else
+        {
+            return c;
+        }
+    }
+        document.getElementById("result").innerHTML ="Highest Number"+" "+ highestNumber(100,500,755);
+        function displayName(name)
+        {
+            document.getElementById("Name").innerHTML = name;
+            console.log(name);
+            alert(name);
+        }
+
+        function Name(name)
+        {
+            document.getElementById("h1Name").innerHTML = name;
+            document.getElementById("h2Name").innerHTML = name;
+            document.getElementById("h3Name").innerHTML = name;
+            document.getElementById("h4Name").innerHTML = name;
+            document.getElementById("h5Name").innerHTML = name;
+        }
+        
+        Name("SUVARNA");
+    </script>
+    </body>
+</html>
