@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>The sort() method sorts an array alphabetically.</p>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="demo"></p>
+
+<script>
+var names= ["Jyoti", "Ramesh", "Shobha", "Suvarna","Aayushi"];
+document.getElementById("demo").innerHTML = names;
+
+function myFunction() {
+  names.sort();
+  names.reverse();
+  document.getElementById("demo").innerHTML = names;
+}
+</script>
+
+</body>
+</html>
