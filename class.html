@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+          class Account
+          {
+              constructor(p,q)
+              {
+                  this.name = p;
+                  this.bal= q;
+              }
+
+              deposite(amt)
+              {
+                  this.bal+=amt;
+              }
+
+              display()
+              {
+                  var s= "NAME :-"+this.name+"<br/>BALANCE :-"+this.bal+"<br/><br/>";
+                  document.write(s);  
+              }
+          }
+
+          p1 = new Account("SUVARNA",60000);
+          p2 = new Account("AYUSHI",70000);
+          p1.deposite(5000);
+          p2.deposite(6000);
+          p1.display();
+          p2.display();
+
+        </script>
+  </head>
+  </html>
