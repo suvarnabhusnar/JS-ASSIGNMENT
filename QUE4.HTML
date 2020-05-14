@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  
+   
+
+  <body>
+    <p id="obj1"></p>
+    <p id="obj2"></p>
+    <script>
+    
+      class Account
+      {
+        constructor(uname,dAmt)
+        {
+          this.name=uname;
+          this.depositAmt = dAmt;
+          this.balance = 0;  
+        }
+        deposit()
+        {
+          this.balance += this.depositAmt;
+        }
+        showName(obj)
+        {
+          return this.name;
+        }
+      }
+      class currentAccount extends Account
+      {
+        constructor(name,dAmt,wAmt)
+        {
+          super(name,dAmt);
+          this.withdrawAmt = wAmt;
+        }
+        withdraw()
+        {
+          this.balance -= this.withdrawAmt;
+        }
+        showAmt(obj)
+        {
+          document.getElementById(obj).innerHTML = "NAMES = "+this.showName(obj)+", BALANCE = "+this.balance+"<br/><br/>";
+        }
+      }
+      var a1 = new currentAccount("SUVARNA",11111,111);
+      a1.deposit();
+      a1.withdraw();
+      a1.showAmt("obj1");
+      var a2 = new currentAccount("AYUSHI",44444,444);
+      a2.deposit();
+      a2.withdraw();
+      a2.showAmt("obj2");
+    </script>
+  </body>
+</html>
