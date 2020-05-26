@@ -1,0 +1,16 @@
+num: <input type="text" id="myText" >
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+
+(function () {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML =x*x;
+})();
+
+}
+
+</script>
