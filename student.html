@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        class student {
+            set studentname(name) {
+                this.name = name;
+            }
+            set studentrollno(rollno) {
+                this.rollno = rollno;
+            }
+            set mark1(mk1) {
+                this.mk1 = mk1;
+
+            }
+            set mark2(mk2) {
+                this.mk2 = mk2;
+            }
+            set mark3(mk3) {
+                this.mk3 = mk3;
+            }
+            get studentname() {
+                return this.name;
+            }
+            get studentrollno() {
+                return this.rollno;
+
+            }
+            get totalmarks() {
+                var mark = this.mk1 + this.mk2 + this.mk3;
+                return mark;
+            }
+            
+            get percentage(){
+            var per = (this.totalmarks * 100) / 300;
+                return Math.round(per);
+            
+            }
+
+        }
+
+        var student1 = new student();
+        student1.studentname = "Suvarna";
+        student1.studentrollno = 111;
+        student1.mark1 = 60;
+        student1.mark2 = 65;
+        student1.mark3 = 89;
+
+        document.getElementById("demo").innerHTML ="<h3>Student1 :</h3>"+ "Student Name :"+ " "+ student1.studentname + "<br/>Student Rollno :" +" "+  student1.studentrollno +
+            "<br/>student totalmarks :" + " "+ student1.totalmarks + "<br/>student pecentage :" + " "+student1.percentage + "<br/>";
+
+
+        var student2 = new student();
+        student2.studentname = "Ayushi";
+        student2.studentrollno = 222;
+        student2.mark1 = 54;
+        student2.mark2 = 95;
+        student2.mark3 = 73;
+        
+        document.getElementById("demo1").innerHTML ="<h3>Student2 :</h3>"+ "Student Name :"+ " "+ student2.studentname + "<br/>Student Rollno :" +" "+  student2.studentrollno +
+            "<br/>student totalmarks :" + " "+ student2.totalmarks + "<br/>student pecentage :" + " "+student2.percentage + "<br/>";
+    </script>
+</body>
+
+</html>
