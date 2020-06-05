@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+      $("p").hide();
+});
+ $("#p1").mouseleave(function(){
+      $("p").show();
+});
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Enter this paragraph.
+The mouseleave() method attaches an event handler function to an HTML element
+The mouseenter() method attaches an event handler function to an HTML element.</p>
+
+</body>
+</html>
