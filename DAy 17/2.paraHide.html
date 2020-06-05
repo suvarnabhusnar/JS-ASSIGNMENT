@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    $("p").hide();
+  },
+  function(){
+    $("p").show();
+  }); 
+});
+</script>
+</head>
+<body>
+
+<p id="p1"><b>$(document).ready()</b>
+The $(document).ready() method allows us to execute a function when the document is fully loaded. This event is already explained in the jQuery Syntax chapter.
+
+<b>click()</b>
+
+The click() method attaches an event handler function to an HTML element.
+
+The function is executed when the user clicks on the HTML element.</p>
+
+</body>
+</html>
