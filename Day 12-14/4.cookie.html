@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p><label>enter cookie value here:</label>
+        <input type="text" id="demo"/><br></p>
+           <input type="button" value="create cookie" onclick="Create()">&nbsp;&nbsp;
+           <input type="button" value="Read cookie" onclick="Read()">
+            <script>
+            function Create() {
+             
+               document.cookie ="username="+document.getElementById("demo").value;
+            }
+            function Read()
+            {
+                document.getElementById("demo1").innerHTML=document.cookie;
+            }
+            </script>
+    <p id="demo1"></p>
+    </body>
+</html>
